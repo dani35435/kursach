@@ -7,45 +7,45 @@ use Src\Session;
 class Auth
 {
     //Свойство для хранения любого класса, реализующего интерфейс IdentityInterface
-    private static IdentityInterface $user;
+    private static IdentityInterface $users;
 
     //Инициализация класса пользователя
-    public static function init(IdentityInterface $user): void
+    public static function init(IdentityInterface $users): void
     {
-        self::$user = $user;
-        if (self::user()) {
-            self::login(self::user());
+        self::$users = $users;
+        if (self::users()) {
+            self::login(self::users());
         }
     }
 
     //Вход пользователя по модели
-    public static function login(IdentityInterface $user): void
+    public static function login(IdentityInterface $users): void
     {
-        self::$user = $user;
-        Session::set('id', self::$user->getId());
+        self::$users = $users;
+        Session::set('id', self::$users->getId());
     }
 
     //Аутентификация пользователя и вход по учетным данным
     public static function attempt(array $credentials): bool
     {
-        if ($user = self::$user->attemptIdentity($credentials)) {
-            self::login($user);
+        if ($users = self::$users->attemptIdentity($credentials)) {
+            self::login($users);
             return true;
         }
         return false;
     }
 
     //Возврат текущего аутентифицированного пользователя
-    public static function user()
+    public static function users()
     {
         $id = Session::get('id') ?? 0;
-        return self::$user->findIdentity($id);
+        return self::$users->findIdentity($id);
     }
 
     //Проверка является ли текущий пользователь аутентифицированным
     public static function check(): bool
     {
-        if (self::user()) {
+        if (self::users()) {
             return true;
         }
         return false;

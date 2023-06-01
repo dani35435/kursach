@@ -32,9 +32,6 @@ class Application
         $this->auth::init(new $this->settings->app['identity']);
     }
 
-
-
-
     public function __get($key)
     {
         switch ($key) {

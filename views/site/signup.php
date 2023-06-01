@@ -20,7 +20,7 @@
                 <input type="text" name="email" required placeholder="Почта">
             </div>
             <div>
-                <input type="text" name="number" required placeholder="Отчество">
+                <input type="text" name="number" required placeholder="Номер">
             </div>
             <div>
                 <input type="text" name="birthday" required placeholder="Дата рождения">

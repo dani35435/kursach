@@ -2,9 +2,9 @@
 
 namespace Controller;
 
-use Src\View;
-use Src\Request;
 use Src\Auth\Auth;
+use Src\Request;
+use Src\View;
 
 
 class Site
