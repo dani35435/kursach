@@ -2,7 +2,7 @@
 return [
     'driver' => 'mysql',
     'host' => 'localhost',
-    'database' => 'mvc',
+    'database' => 'kursach',
     'username' => 'root',
     'password' => '',
     'charset' => 'utf8',
