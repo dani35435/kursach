@@ -3,7 +3,7 @@
         'name' => 'dani35435/kursach',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '41725ea4839a1b51a31de280476084a9f6f80b2a',
+        'reference' => '91a879dc8bdaa0b61606e96947490f8d016c1f43',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +22,7 @@
         'dani35435/kursach' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '41725ea4839a1b51a31de280476084a9f6f80b2a',
+            'reference' => '91a879dc8bdaa0b61606e96947490f8d016c1f43',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -84,7 +84,7 @@
         'illuminate/contracts' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'd9815b669559f792e67a3c39604e6e4af7e1c77d',
+            'reference' => '5d382428a3c1b3b639a5c213e0dc4cc31d7827aa',
             'type' => 'library',
             'install_path' => __DIR__ . '/../illuminate/contracts',
             'aliases' => array(
@@ -95,7 +95,7 @@
         'illuminate/database' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '6b7d8f8a6f7ada95f009e3365f1903c5d5d9209b',
+            'reference' => '3025a3669248185f4af576759b11e461c9edf5b2',
             'type' => 'library',
             'install_path' => __DIR__ . '/../illuminate/database',
             'aliases' => array(
@@ -139,7 +139,7 @@
         'illuminate/support' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'aa0a68e3e9687d1f2665bac3cda4730b5d20de0b',
+            'reference' => 'e55844a7d185688bd35add6d160eae7bc1eab0fc',
             'type' => 'library',
             'install_path' => __DIR__ . '/../illuminate/support',
             'aliases' => array(

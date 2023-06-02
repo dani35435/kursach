@@ -23,12 +23,10 @@
             <?php
             else:
                 ?>
-<!---->
 <!--                <a href="--><?php //= app()->route->getUrl('/room')?><!--">ROOM</a>-->
 <!--                <a href="--><?php //= app()->route->getUrl('/subdivision')?><!--">SUBDIVISION</a>-->
-<!--                <a href="--><?php //= app()->route->getUrl('/profile')?><!--">PROFILE</a>-->
-<!--                <a href="--><?php //= app()->route->getUrl('/logout')?><!--">LOGOUT(--><?php //= app()->auth::User()->login ?><!--)</a>-->
-
+                <a href="<?= app()->route->getUrl('/profile')?>">Профиль</a>
+                <a href="<?= app()->route->getUrl('/logout')?>">Выйти(<?= app()->auth::Users()->name ?>)</a>
 
             <?php
             endif;
