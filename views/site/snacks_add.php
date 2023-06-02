@@ -1,4 +1,4 @@
-<h3><?= $message ?? 'Добавление пиццы'; ?></h3>
+<h3><?= $message ?? 'Добавление закусок'; ?></h3>
 
 <form method="post">
     <div class="centr">

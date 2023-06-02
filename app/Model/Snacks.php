@@ -5,7 +5,7 @@ namespace Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Menuses extends Model
+class Snacks extends Model
 {
     use HasFactory;
 
@@ -13,10 +13,8 @@ class Menuses extends Model
 
     protected $fillable = [
         'id',
-        'pizzas_id',
-        'drinks_id',
-        'snacks_id',
-        'combos_id',
+        'title',
+        'description',
+        'price',
     ];
-
 }

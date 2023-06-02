@@ -2,12 +2,16 @@
 
 namespace Controller;
 
+use Model\Drinks;
+use Model\Snacks;
 use Src\Auth\Auth;
 use Src\Request;
 use Src\View;
 use Model\Users;
 use Model\Pizzas;
-use Model\Menuses;
+use Model\Stocks;
+
+
 
 
 class Site
@@ -63,30 +67,76 @@ class Site
     }
 
 //страница Пиццы
-    public function pizza(Request $request): string
+    public function pizza(): string
 
     {
-        $pizzas = Pizzas::all();
-        return new View('site.pizza', ['pizzas' => $pizzas]);
-    }
-
-//страница Меню
-    public function menu(Request $request): string
-
-    {
-        $menus = Menuses::all();
-        return new View('site.menu', ['menus'=>$menus]);
+        $Pizzas = Pizzas::all();
+        return new View('site.pizza', ['Pizzas' => $Pizzas]);
     }
 
 
-// Добавление
+//страница Закусок
+    public function snacks(): string
+
+    {
+        $Snacks = Snacks::all();
+        return new View('site.snacks', ['Snacks' => $Snacks]);
+    }
+
+//страница напитков
+
+    public function drinks(): string
+
+    {
+        $Drinks = Drinks::all();
+        return new View('site.drinks', ['Drinks' => $Drinks]);
+    }
+
+//страница акций
+    public function stocks(): string
+
+    {
+        $Stocks = Stocks::all();
+        return new View('site.stocks', ['Stocks' => $Stocks]);
+    }
+
+// Добавление пиццы
 
     public function pizza_add(Request $request): string
     {
         if ($request->method === 'POST' && Pizzas::create($request->all())) {
-            app()->route->redirect('/menu');
+            app()->route->redirect('/pizza');
         }
         return new View('site.pizza_add');
+    }
+
+//добавление закусок
+
+    public function snacks_add(Request $request): string
+    {
+        if ($request->method === 'POST' && Snacks::create($request->all())) {
+            app()->route->redirect('/snacks');
+        }
+        return new View('site.snacks_add');
+    }
+
+//добавление напитков
+    public function drinks_add(Request $request): string
+    {
+        if ($request->method === 'POST' && Drinks::create($request->all())) {
+            app()->route->redirect('/drinks');
+        }
+        return new View('site.drinks_add');
+    }
+
+//добавление акций
+
+    public function stocks_add(Request $request): string
+    {
+        if ($request->method === 'POST' && Stocks::create($request->all())) {
+            app()->route->redirect('/stocks');
+        }
+        return new View('site.stocks_add');
     }
 }
 
