@@ -3,7 +3,7 @@
         'name' => 'dani35435/kursach',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '91a879dc8bdaa0b61606e96947490f8d016c1f43',
+        'reference' => 'ab17e25a7435aef59274d30a047a7d6d9699d10b',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +22,7 @@
         'dani35435/kursach' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '91a879dc8bdaa0b61606e96947490f8d016c1f43',
+            'reference' => 'ab17e25a7435aef59274d30a047a7d6d9699d10b',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

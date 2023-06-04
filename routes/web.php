@@ -15,3 +15,4 @@ Route::add('GET', '/drinks', [Controller\Site::class, 'drinks']);
 Route::add(['GET', 'POST'], '/drinks_add', [Controller\Site::class, 'drinks_add']);
 Route::add('GET', '/stocks', [Controller\Site::class, 'stocks']);
 Route::add(['GET', 'POST'], '/stocks_add', [Controller\Site::class, 'stocks_add']);
+Route::add(['GET', 'POST'], '/delete', [Controller\Site::class, 'delete']);

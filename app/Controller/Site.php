@@ -27,6 +27,14 @@ class Site
     }
 
 
+    public function delete(Request $request): string
+    {
+//        if ($request->method === 'DELETE' && Pizzas::where('id', $request->id ?? 3)->get()) {
+//            app()->route->redirect('/pizzas');
+//        }
+        return new View('site.delete');
+    }
+
 // вход
     public function login(Request $request): string
     {
@@ -138,6 +146,10 @@ class Site
         }
         return new View('site.stocks_add');
     }
+
+//удаление
+
+
 }
 
 
