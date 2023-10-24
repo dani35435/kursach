@@ -1,0 +1,22 @@
+{
+    "name": "dani35435/kursach",
+    "description": "курсовой проект",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "core/Src/",
+            "": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dani35435"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4 | ^8.0",
+        "nikic/fast-route": "*"
+    }
+}
